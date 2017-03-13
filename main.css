@@ -1,0 +1,39 @@
+@import "normalize.css";
+:root {
+    --white: #fff;
+    --black: #000;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.amp {
+    font-family: Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.button {
+  text-transform: uppercase;
+  border:none;
+  background: var(--white);
+  box-shadow: 0 1px 1px color(var(--black) alpha(30%));
+  margin: 1em;
+  padding: .5em 1em;
+  transition: all .5s;
+}
+.button:hover {
+    box-shadow: 0 3px 3px color(var(--black) alpha(30%));
+    transform: scale(1.05);
+}
+.button.small {
+    padding: .25em .5em;
+}
+.button.large {
+    padding: 1em;
+}
+.dark {
+    background: var(--black);
+    color: var(--white);
+}
