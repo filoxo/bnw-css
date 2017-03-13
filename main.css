@@ -2,18 +2,30 @@
 :root {
     --white: #fff;
     --black: #000;
+    font-size: 18px;
 }
-
+/* Structure */
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
-
+.section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 10px;
+}
+/* Components */
+.light {
+    font-weight: 300;
+}
+.bold {
+    font-weight: 700;
+}
 .amp {
     font-family: Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
     font-style: italic;
     font-weight: normal;
 }
-
+/* Buttons */
 .button {
   text-transform: uppercase;
   border:none;
@@ -33,6 +45,7 @@ body {
 .button.large {
     padding: 1em;
 }
+/* Utility */
 .dark {
     background: var(--black);
     color: var(--white);
