@@ -1,0 +1,24 @@
+{
+  "name": "bnw-css",
+  "version": "0.0.1",
+  "description": "An attempt at making a black and white only CSS framework.",
+  "main": "index.js",
+  "repository": "https://github.com/filoxo/bnw-css.git",
+  "author": "Carlos Filoteo <c.filoteo@live.com>",
+  "license": "MIT",
+  "scripts": {
+    "build:dev": "node_modules/postcss-cli/bin/postcss -c postcss.json -w",
+    "build": "node_modules/postcss-cli/bin/postcss -c postcss.json",
+    "reload": "lr-http-server -p 3000",
+    "start": "npm-run-all -p build:dev reload"
+  },
+  "devDependencies": {
+    "cssnano": "^3.10.0",
+    "lr-http-server": "^0.1.5",
+    "normalize.css": "^5.0.0",
+    "npm-run-all": "^4.0.1",
+    "postcss-cli": "^2.6.0",
+    "postcss-cssnext": "^2.9.0",
+    "postcss-import": "^9.1.0"
+  }
+}
