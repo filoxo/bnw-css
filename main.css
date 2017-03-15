@@ -2,6 +2,11 @@
 :root {
     --white: #fff;
     --black: #000;
+    --color-1: #2b2b2b;
+    --color-2: #555;
+    --color-3: #808080;
+    --color-4: #aaa;
+    --color-5: #d5d5d5;
     font-size: 18px;
 }
 /* Structure */
@@ -14,10 +19,10 @@ body {
     padding: 10px;
 }
 /* Components */
-.light {
+.text-light {
     font-weight: 300;
 }
-.bold {
+.text-bold {
     font-weight: 700;
 }
 .amp {
@@ -25,25 +30,53 @@ body {
     font-style: italic;
     font-weight: normal;
 }
+/* Anchors */
+a, .link {
+    background: transparent;
+    border: none;
+    color: var(--color-2);
+    font-weight: 300;
+    padding: 0;
+    text-decoration: none;
+}
+a:hover, .link:hover {
+    cursor: pointer;
+}
+a:hover, .link:hover, p > a, p > .link {
+    text-decoration: underline;
+}
+
 /* Buttons */
 .button {
   text-transform: uppercase;
-  border:none;
+  border: 1px solid var(--color-4);
   background: var(--white);
-  box-shadow: 0 1px 1px color(var(--black) alpha(30%));
-  margin: 1em;
+  margin: .25em;
   padding: .5em 1em;
   transition: all .5s;
 }
-.button:hover {
-    box-shadow: 0 3px 3px color(var(--black) alpha(30%));
-    transform: scale(1.05);
+.button:hover,
+.botton:focus {
+    transform: translateY(-.1rem);
+    box-shadow: 0 1px 3px color(var(--black) alpha(10%));
+}
+.button:active {
+    transform: translateY(.1rem);
 }
 .button.small {
     padding: .25em .5em;
 }
 .button.large {
     padding: 1em;
+}
+/* Cards */
+.card {
+    box-shadow: 0 1px 3px color(var(--black) alpha(20%));
+    padding: 1rem;
+}
+.card .title {
+    margin: -1rem -1rem 0 -1rem;
+    padding: 1rem;
 }
 /* Utility */
 .dark {
