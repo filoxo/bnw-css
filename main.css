@@ -13,18 +13,25 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+h1, h2, h3, h4, h5, h6 { font-weight: 300; }
+h1, h2, h3, h4, h5, h6, p { margin: .5rem 0; }
 .section {
     max-width: 900px;
     margin: 0 auto;
     padding: 10px;
 }
 /* Components */
-.text-light {
-    font-weight: 300;
-}
-.text-bold {
-    font-weight: 700;
-}
+.text-light { font-weight: 300; }
+.text-bold { font-weight: 700; }
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
 .amp {
     font-family: Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
     font-style: italic;
@@ -39,12 +46,8 @@ a, .link {
     padding: 0;
     text-decoration: none;
 }
-a:hover, .link:hover {
-    cursor: pointer;
-}
-a:hover, .link:hover, p > a, p > .link {
-    text-decoration: underline;
-}
+a:hover, .link:hover { cursor: pointer; }
+a:hover, .link:hover, p > a, p > .link { text-decoration: underline; }
 
 /* Buttons */
 .button {
@@ -60,15 +63,9 @@ a:hover, .link:hover, p > a, p > .link {
     transform: translateY(-.1rem);
     box-shadow: 0 1px 3px color(var(--black) alpha(10%));
 }
-.button:active {
-    transform: translateY(.1rem);
-}
-.button.small {
-    padding: .25em .5em;
-}
-.button.large {
-    padding: 1em;
-}
+.button:active { transform: translateY(.1rem); }
+.button.small { padding: .25em .5em; }
+.button.large { padding: 1em; }
 /* Cards */
 .card {
     box-shadow: 0 1px 3px color(var(--black) alpha(20%));
